@@ -1,0 +1,37 @@
+
+#destination-FAQ-01 h3, #destination-FAQ-02 h3{
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #8080806e;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+}
+#destination-FAQ-01 a:hover h3, #destination-FAQ-02 a:hover h3{
+    border: 1px solid red;
+    transition: 0.6s;
+}
+#destination-FAQ-01 .destination_contenido, #destination-FAQ-02 .destination_contenido{
+    overflow:hidden;
+    max-height:0;
+    margin:0px;
+    transition: all 0.5s ease;
+}
+#destination-FAQ-02{
+    margin-bottom: 22px;
+}
+.bloque.activo .destination_contenido{
+    max-height: 270px !important;
+    margin-bottom: 22px !important;
+    margin-top: -10px !important;
+}
+.destination_contenido{
+  text-align: center;
+}
+
+.destination_contenido p{
+  width:100%;
+  display:block;
+  background-color:#fff;
+}

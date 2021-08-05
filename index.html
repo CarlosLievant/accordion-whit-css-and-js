@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <style>
+    body{
+      padding: 40px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+  </style>
+
+
+  <div>
+    <div class="bloque" id="destination-FAQ-01">
+        <h3 class="FAQ_h3">Hola</h3>
+        <div class="destination_contenido">
+            <p> LUXURY_ANSW01_01 </p>
+            <p> LUXURY_ANSW01_02 </p>
+        </div>
+    </div>
+    <div class="bloque" id="destination-FAQ-02">
+        <h3 class="FAQ_h3">Hola</h3>
+        <div class="destination_contenido">
+            <p> LUXURY_ANSW02_01 </p>
+            <p> LUXURY_ANSW02_02 </p>
+            <p> LUXURY_ANSW02_03 </p>
+            <p> LUXURY_ANSW02_04 </p>
+            <p> LUXURY_ANSW02_05 </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const bloque = document.querySelectorAll('.bloque');
+                const h3 = document.querySelectorAll('.FAQ_h3');
+                h3.forEach( (cadaH2 , i) =>{
+                    h3[i].addEventListener('click', () =>{
+                        bloque.forEach((cadaBloque , i) =>{
+                            bloque[i].classList.remove('activo')
+                        })
+                        bloque[i].classList.add('activo')
+                    })
+                })
+
+
+
+</script>
+</body>
+</html>
